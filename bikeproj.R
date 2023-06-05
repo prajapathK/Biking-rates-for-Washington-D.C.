@@ -1,8 +1,6 @@
-# Final Projecct
 
 
-#we re-used a lot of the same codeline here and there, 
-#some of them being par(mfrow), by() statements
+
 
 #bikes cleaned csv\
 install.packages("colorspace")
@@ -10,13 +8,15 @@ install.packages("ggplot2")
 library(ggplot2)
 install.packages("dunn.test")
 library(dunn.test)
+#installing required packages
 
-
-
+#pulling the data
 bdata<-read.csv(file.choose())
 
+#first glance analysis
 summary(bdata)
 
+#checking linear model
 model1<-lm(bdata$yr,bdata$casual)
 
 par(mfrow=c(1,4))
