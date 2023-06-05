@@ -130,6 +130,7 @@ summary(lm22)
 
 
 #attached only which are significxant
+
 #multiple regression
 #season,feelingtemp, weather situation, windspeed, humidity
 lm_final<-lm(bdata$cnt~bdata$season+bdata$atemp+bdata$weathersit+bdata$windspeed+bdata$hum)
